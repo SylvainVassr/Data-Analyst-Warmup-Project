@@ -80,9 +80,26 @@ Nous aurons donc 6 PC ! Voici le pourcentage de variance expliquée par chaque g
 Nous pouvons donc avoir notre matrice des **Loadings** avec nos coefficient directeur :
 
 ![Image des %variance_expliquee](loadings.png)
+
+Pour mieux interpréter chaque composante principale, nous attribuons un nom reflétant les variables qui y contribuent le plus fortement, en nous basant sur les scores (loadings) obtenus lors de l’ACP. Cela permet de synthétiser l’information et de faciliter la compréhension des relations entre variables.
+
+- PC1 → Concentration Acide
+- PC2 → Concentration en SO₂
+- PC3 → Équilibre alcool-soufre
+- PC4 → Charge minérale
+- PC5 → Intensité sucrée
+
+
 ![Image du cercle des correlations](correlation_circle.png)
 
 Nommer les composantes
+
+- PC1 → Concentration Acide
+- PC2 → Concentration en SO₂
+- PC3 → Équilibre alcool-soufre
+- PC4 → Charge minérale
+- PC5 → Intensité sucrée
+
 Faire la projection
 
 
@@ -90,3 +107,6 @@ Faire la projection
 
 Faire une courte analyse
 
+Ouvrir sur d'autres graphiques possibles
+
+Faire un bian de l'ACP
