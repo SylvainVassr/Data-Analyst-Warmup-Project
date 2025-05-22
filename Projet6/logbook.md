@@ -58,55 +58,12 @@ L’objectif final est de mieux comprendre la **distribution des individus** dan
 
 Bien que les trois graphiques classiques — scree plot, cercle des corrélations et projection des individus — couvrent généralement l’essentiel de l’analyse en ACP, il est aussi possible d’explorer d’autres représentations, comme les **biplots** (qui combinent variables et individus) ou les **graphes des contributions des variables** (pour identifier précisément leur influence), afin d’approfondir l’interprétation des résultats et mieux visualiser les relations entre variables et observations.
 
+## Conclusion
 
-## Mise en pratique
-### <u>A. Préparation des données</u>
-Afin d’obtenir des résultats fiables, il est d’abord nécessaire de nettoyer les données : cela inclut la suppression ou le traitement des valeurs manquantes (NaN) ainsi que la gestion des valeurs aberrantes (outliers), qui peuvent fortement influencer l’analyse.
+C’est une **méthode exploratoire**, pas une méthode de décision. Elle sert à :
 
-Ensuite, il est important de ne conserver que les variables quantitatives, l’ACP ne s’appliquant pas aux données qualitatives.
+- **Observer** des tendances invisibles à l’œil nu,  
+- **Réduire la dimension** avant d’utiliser d’autres modèles,  
+- **Repérer les groupes d’individus ou de profils**,  
+- **Détecter les variables les plus structurantes**.
 
-Enfin, il faut standardiser les variables (centrer-réduire), afin qu’elles soient toutes sur la même échelle et que l’ACP ne soit pas biaisée par des différences d’unités ou de grandeurs.
-
-### <u>B. Application de l'ACP</u>
-
-Nous commencons par déterminer le nombres de PC pour notre analyse.
-
-![Image du Screeplot](screeplot.png)
-
-Nous aurons donc 6 PC ! Voici le pourcentage de variance expliquée par chaque groupe en détail :
-
-![Image des %variance_expliquee](variance_expliquee.png)
-
-Nous pouvons donc avoir notre matrice des **Loadings** avec nos coefficient directeur :
-
-![Image des %variance_expliquee](loadings.png)
-
-Pour mieux interpréter chaque composante principale, nous attribuons un nom reflétant les variables qui y contribuent le plus fortement, en nous basant sur les scores (loadings) obtenus lors de l’ACP. Cela permet de synthétiser l’information et de faciliter la compréhension des relations entre variables.
-
-- PC1 → Concentration Acide
-- PC2 → Concentration en SO₂
-- PC3 → Équilibre alcool-soufre
-- PC4 → Charge minérale
-- PC5 → Intensité sucrée
-
-
-![Image du cercle des correlations](correlation_circle.png)
-
-Nommer les composantes
-
-- PC1 → Concentration Acide
-- PC2 → Concentration en SO₂
-- PC3 → Équilibre alcool-soufre
-- PC4 → Charge minérale
-- PC5 → Intensité sucrée
-
-Faire la projection
-
-
-### <u>C. Analyse des résultats</u>
-
-Faire une courte analyse
-
-Ouvrir sur d'autres graphiques possibles
-
-Faire un bian de l'ACP
